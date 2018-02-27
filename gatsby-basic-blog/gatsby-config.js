@@ -3,7 +3,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-fridge',
       options: {
-        token: '0GTdA28HZXZXLNfOKHUOz'
+        token: process.env.TOKEN
       }
     }
   ]
