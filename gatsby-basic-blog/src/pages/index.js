@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 export default ({data}) =>
   <main>
@@ -9,7 +10,9 @@ export default ({data}) =>
     <div>
       {data.allFridgePosts.edges.map(({node: post}) =>
         <article>
-          <h2>{post.title}</h2>
+          <h2>
+            <Link to={`/post/${post.id}`}>{post.title}</Link>
+          </h2>
           <p>{post.description}</p>
         </article>
       )}
@@ -27,7 +30,7 @@ query indexQuery {
   allFridgePosts {
     edges {
       node {
-        slug
+        id
         title
         description
         date_created
