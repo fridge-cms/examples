@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.216",
+    "gatsby-source-fridge": "^0.0.3"
+  }
+}
