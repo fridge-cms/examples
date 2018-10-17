@@ -1,8 +1,10 @@
+import { HtmlContent } from 'fridge-next'
+
 const Post = ({ post }) =>
   <main>
     <article>
       <h1>{post.title}</h1>
-      <p>{post.description}</p>
+      <HtmlContent content={post.description} />
     </article>
   </main>
 
